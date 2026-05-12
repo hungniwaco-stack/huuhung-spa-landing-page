@@ -1,0 +1,109 @@
+/* Custom CSS for Hữu Hùng Spa */
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap');
+
+:root {
+  /* Soft Pastels */
+  --color-cream: #FAF9F6;
+  --color-sage: #E0E5DF;
+  --color-sage-dark: #B5C0B3;
+  --color-pink-soft: #F9F0F1;
+  
+  /* Gold Accents */
+  --color-gold: #D4AF37;
+  --color-gold-hover: #C5A017;
+
+  /* Text Colors */
+  --color-text-main: #2C3E35;
+  --color-text-muted: #5C6E65;
+
+  /* Neumorphic Shadows */
+  --shadow-soft: 8px 8px 16px #e0dfd9, -8px -8px 16px #ffffff;
+  --shadow-inset: inset 4px 4px 8px #e0dfd9, inset -4px -4px 8px #ffffff;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  color: var(--color-text-main);
+  background-color: var(--color-cream);
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Lora', serif;
+  color: var(--color-text-main);
+}
+
+/* Utilities for Custom Colors in Tailwind (via classes) */
+.bg-cream { background-color: var(--color-cream); }
+.bg-sage { background-color: var(--color-sage); }
+.bg-pink-soft { background-color: var(--color-pink-soft); }
+
+.text-gold { color: var(--color-gold); }
+.bg-gold { background-color: var(--color-gold); }
+.hover\:bg-gold-hover:hover { background-color: var(--color-gold-hover); }
+
+.text-main { color: var(--color-text-main); }
+.text-muted { color: var(--color-text-muted); }
+
+/* Soft UI Elements */
+.soft-card {
+  background-color: var(--color-cream);
+  border-radius: 24px;
+  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.05),
+             -10px -10px 30px rgba(255, 255, 255, 0.8);
+  transition: all 0.3s ease;
+}
+
+.soft-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 15px 15px 35px rgba(0, 0, 0, 0.07),
+             -15px -15px 35px rgba(255, 255, 255, 0.9);
+}
+
+.soft-button {
+  background-color: var(--color-cream);
+  border-radius: 50px;
+  box-shadow: 5px 5px 15px rgba(0,0,0,0.05), -5px -5px 15px rgba(255,255,255,1);
+  transition: all 0.3s ease;
+}
+
+.soft-button:hover {
+  box-shadow: inset 3px 3px 10px rgba(0,0,0,0.05), inset -3px -3px 10px rgba(255,255,255,1);
+}
+
+.primary-button {
+  background-color: var(--color-gold);
+  color: white;
+  border-radius: 50px;
+  box-shadow: 0 4px 15px rgba(212, 175, 55, 0.4);
+  transition: all 0.3s ease;
+}
+
+.primary-button:hover {
+  background-color: var(--color-gold-hover);
+  box-shadow: 0 6px 20px rgba(212, 175, 55, 0.6);
+  transform: translateY(-2px);
+}
+
+/* Animations */
+.fade-in-up {
+  animation: fadeInUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.delay-100 { animation-delay: 100ms; }
+.delay-200 { animation-delay: 200ms; }
+.delay-300 { animation-delay: 300ms; }
+
+/* Image overlay for readability */
+.hero-overlay {
+  background: linear-gradient(to bottom, rgba(250, 249, 246, 0.2), rgba(250, 249, 246, 0.9));
+}

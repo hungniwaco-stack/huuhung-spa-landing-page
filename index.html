@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hữu Hùng Spa | Spa Trị Liệu Cao Cấp</title>
+    <meta name="description" content="Trải nghiệm sự thư giãn tuyệt đối tại Hữu Hùng Spa. Chúng tôi cung cấp các liệu trình massage cao cấp, chăm sóc da mặt toàn diện và ủ toàn thân bằng thảo dược trong một không gian thanh bình, sang trọng.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="bg-cream text-main antialiased selection:bg-gold selection:text-white">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 transition-all duration-300" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-24">
+                <div class="flex-shrink-0 flex items-center gap-2 cursor-pointer">
+                    <i data-lucide="flower-2" class="text-gold w-8 h-8"></i>
+                    <span class="font-lora text-2xl font-medium tracking-wide">Hữu Hùng<span class="text-gold">.</span></span>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#about" class="text-main hover:text-gold transition-colors duration-300">Giới thiệu</a>
+                    <a href="#services" class="text-main hover:text-gold transition-colors duration-300">Dịch vụ</a>
+                    <a href="#gallery" class="text-main hover:text-gold transition-colors duration-300">Không gian</a>
+                    <a href="#testimonials" class="text-main hover:text-gold transition-colors duration-300">Đánh giá</a>
+                    <a href="#booking" class="primary-button px-6 py-3 font-medium cursor-pointer">Đặt lịch ngay</a>
+                </div>
+                <!-- Mobile menu button -->
+                <div class="md:hidden flex items-center">
+                    <button class="text-main hover:text-gold focus:outline-none">
+                        <i data-lucide="menu" class="w-6 h-6"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative h-screen flex items-center justify-center overflow-hidden">
+        <!-- Background Image -->
+        <div class="absolute inset-0 z-0">
+            <img src="assets/hero_spa_background_1778552185970.png" alt="Không gian Spa sang trọng" class="w-full h-full object-cover object-center scale-105 transform origin-center transition-transform duration-10000 hover:scale-100" />
+            <div class="absolute inset-0 hero-overlay"></div>
+        </div>
+
+        <div class="relative z-10 text-center px-4 max-w-4xl mx-auto mt-20">
+            <span class="block text-gold font-medium tracking-widest uppercase mb-4 fade-in-up text-sm sm:text-base">Chào mừng đến với chốn bình yên của bạn</span>
+            <h1 class="text-5xl sm:text-6xl md:text-7xl font-lora font-medium mb-6 leading-tight fade-in-up delay-100">
+                Khám phá <br/> <span class="italic text-sage-dark">Sự Cân Bằng Nội Tâm</span>
+            </h1>
+            <p class="text-lg sm:text-xl text-muted mb-10 max-w-2xl mx-auto font-light leading-relaxed fade-in-up delay-200">
+                Bỏ lại đằng sau những ồn ào của thế giới. Trải nghiệm những liệu pháp chăm sóc cao cấp được thiết kế để phục hồi cơ thể, tâm trí và tinh thần của bạn.
+            </p>
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4 fade-in-up delay-300">
+                <a href="#booking" class="primary-button px-8 py-4 text-lg w-full sm:w-auto text-center cursor-pointer">Bắt đầu hành trình</a>
+                <a href="#services" class="soft-button px-8 py-4 text-lg w-full sm:w-auto text-center text-main font-medium cursor-pointer">Khám phá dịch vụ</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-24 bg-pink-soft">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+                <div class="relative">
+                    <div class="absolute inset-0 bg-gold/10 rounded-full blur-3xl transform -translate-x-1/2 -translate-y-1/2"></div>
+                    <img src="assets/spa_interior_gallery_1778552248400.png" alt="Sảnh chờ Spa" class="relative z-10 rounded-t-full rounded-b-3xl shadow-2xl w-full h-[600px] object-cover" />
+                </div>
+                <div>
+                    <span class="text-gold font-medium tracking-widest uppercase mb-2 block">Triết lý của chúng tôi</span>
+                    <h2 class="text-4xl md:text-5xl font-lora mb-6">Phương pháp tiếp cận toàn diện cho sức khỏe của bạn</h2>
+                    <p class="text-muted leading-relaxed mb-6">
+                        Tại Hữu Hùng Spa, chúng tôi tin rằng vẻ đẹp và sự khỏe mạnh đích thực bắt nguồn từ bên trong. Triết lý của chúng tôi là sự kết hợp giữa các phương pháp chữa lành cổ truyền và khoa học trị liệu hiện đại, nhằm mang lại cho bạn một trải nghiệm thay đổi toàn diện.
+                    </p>
+                    <p class="text-muted leading-relaxed mb-8">
+                        Từng chi tiết nhỏ, từ không gian êm dịu đến các sản phẩm hữu cơ, thân thiện với môi trường, đều được lựa chọn kỹ lưỡng để đưa bạn vào trạng thái thư giãn và tái tạo năng lượng sâu sắc.
+                    </p>
+                    <div class="grid grid-cols-2 gap-6">
+                        <div class="flex items-start gap-4">
+                            <div class="bg-white p-3 rounded-2xl shadow-sm text-gold">
+                                <i data-lucide="leaf"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-lora font-medium text-lg mb-1">Sản phẩm Hữu cơ</h4>
+                                <p class="text-sm text-muted">100% tự nhiên, an toàn</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <div class="bg-white p-3 rounded-2xl shadow-sm text-gold">
+                                <i data-lucide="sparkles"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-lora font-medium text-lg mb-1">Chuyên gia Trị liệu</h4>
+                                <p class="text-sm text-muted">Đội ngũ giàu kinh nghiệm</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-24 bg-cream relative">
+        <div class="absolute top-0 right-0 w-64 h-64 bg-sage rounded-full blur-3xl opacity-30 pointer-events-none"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center mb-16">
+                <span class="text-gold font-medium tracking-widest uppercase mb-2 block">Dịch vụ của chúng tôi</span>
+                <h2 class="text-4xl md:text-5xl font-lora mb-4">Liệu pháp Tinh chọn</h2>
+                <p class="text-muted max-w-2xl mx-auto">Những liệu pháp được thiết kế riêng biệt nhằm khôi phục sự cân bằng và sinh lực tự nhiên của bạn.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="soft-card group overflow-hidden rounded-3xl cursor-pointer">
+                    <div class="h-64 overflow-hidden">
+                        <img src="assets/spa_massage_service_1778552201144.png" alt="Massage Đá Nóng" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500" />
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-2xl font-lora mb-2">Massage Đá Nóng Đặc Trưng</h3>
+                        <p class="text-muted mb-4 text-sm leading-relaxed">Xua tan mệt mỏi với những viên đá basalt ấm nóng cùng các kỹ thuật massage nhịp nhàng giúp thư giãn sâu cơ bắp.</p>
+                        <div class="flex justify-between items-center mt-6">
+                            <span class="text-gold font-medium">90 Phút | 1.500.000đ</span>
+                            <span class="w-10 h-10 rounded-full bg-pink-soft flex items-center justify-center text-main group-hover:bg-gold group-hover:text-white transition-colors">
+                                <i data-lucide="arrow-right" class="w-5 h-5"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="soft-card group overflow-hidden rounded-3xl cursor-pointer">
+                    <div class="h-64 overflow-hidden">
+                        <img src="assets/spa_facial_service_1778552217174.png" alt="Chăm sóc da mặt" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500" />
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-2xl font-lora mb-2">Chăm Sóc Da Mặt Toàn Diện</h3>
+                        <p class="text-muted mb-4 text-sm leading-relaxed">Liệu trình chăm sóc da mặt chuyên sâu sử dụng thảo dược hữu cơ để khôi phục vẻ rạng rỡ tự nhiên và cấp ẩm cho làn da.</p>
+                        <div class="flex justify-between items-center mt-6">
+                            <span class="text-gold font-medium">60 Phút | 1.200.000đ</span>
+                            <span class="w-10 h-10 rounded-full bg-pink-soft flex items-center justify-center text-main group-hover:bg-gold group-hover:text-white transition-colors">
+                                <i data-lucide="arrow-right" class="w-5 h-5"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="soft-card group overflow-hidden rounded-3xl cursor-pointer">
+                    <div class="h-64 overflow-hidden">
+                        <img src="assets/spa_body_wrap_1778552232502.png" alt="Ủ thảo dược" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500" />
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-2xl font-lora mb-2">Ủ Trắng Bằng Thảo Dược</h3>
+                        <p class="text-muted mb-4 text-sm leading-relaxed">Thanh lọc và nuôi dưỡng làn da với liệu pháp ủ toàn thân đặc trưng, kết hợp các loại tinh dầu và khoáng chất tự nhiên.</p>
+                        <div class="flex justify-between items-center mt-6">
+                            <span class="text-gold font-medium">75 Phút | 1.350.000đ</span>
+                            <span class="w-10 h-10 rounded-full bg-pink-soft flex items-center justify-center text-main group-hover:bg-gold group-hover:text-white transition-colors">
+                                <i data-lucide="arrow-right" class="w-5 h-5"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <a href="#" class="inline-flex items-center gap-2 text-main font-medium hover:text-gold transition-colors">
+                    Xem Toàn Bộ Dịch Vụ <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-24 bg-sage/20 relative">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <i data-lucide="quote" class="w-12 h-12 text-gold/30 mx-auto mb-6"></i>
+            <h2 class="text-3xl md:text-4xl font-lora mb-12 italic">"Từ khoảnh khắc bước vào, tôi đã cảm nhận được sự bình yên tuyệt đối. Liệu trình Massage Đá Nóng chính xác là những gì tôi cần để tái tạo năng lượng. Đây thực sự là trải nghiệm Spa tuyệt vời nhất tôi từng có."</h2>
+            <div class="flex items-center justify-center gap-4">
+                <div class="w-12 h-12 rounded-full bg-sage overflow-hidden flex-shrink-0">
+                    <img src="https://i.pravatar.cc/150?img=44" alt="Ảnh khách hàng" class="w-full h-full object-cover">
+                </div>
+                <div class="text-left">
+                    <h4 class="font-medium">Lê Lan Anh</h4>
+                    <div class="flex text-gold">
+                        <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                        <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                        <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                        <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                        <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section id="booking" class="py-24 bg-cream">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="soft-card p-8 md:p-12">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                    <div>
+                        <span class="text-gold font-medium tracking-widest uppercase mb-2 block">Ghé thăm chúng tôi</span>
+                        <h2 class="text-4xl font-lora mb-6">Sẵn sàng để thư giãn?</h2>
+                        <p class="text-muted mb-8">Hãy đặt lịch hẹn ngay hôm nay và bước những bước đầu tiên đến với sự thư giãn tuyệt đối. Đội ngũ tư vấn của chúng tôi sẽ đảm bảo bạn có một trải nghiệm hoàn hảo nhất.</p>
+                        
+                        <div class="space-y-6">
+                            <div class="flex items-start gap-4">
+                                <div class="w-10 h-10 rounded-full bg-pink-soft flex items-center justify-center text-gold flex-shrink-0">
+                                    <i data-lucide="map-pin" class="w-5 h-5"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-medium mb-1">Địa chỉ</h4>
+                                    <p class="text-muted text-sm">123 Đường Bình Yên, Quận Trung Tâm<br>Thành phố Hồ Chí Minh</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-4">
+                                <div class="w-10 h-10 rounded-full bg-pink-soft flex items-center justify-center text-gold flex-shrink-0">
+                                    <i data-lucide="clock" class="w-5 h-5"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-medium mb-1">Giờ mở cửa</h4>
+                                    <p class="text-muted text-sm">Thứ 2 - Thứ 6: 9:00 - 20:00<br>Thứ 7 - Chủ Nhật: 10:00 - 18:00</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-4">
+                                <div class="w-10 h-10 rounded-full bg-pink-soft flex items-center justify-center text-gold flex-shrink-0">
+                                    <i data-lucide="phone" class="w-5 h-5"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-medium mb-1">Liên hệ</h4>
+                                    <p class="text-muted text-sm">+84 (28) 1234-5678<br>hello@huuhungspa.vn</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-white p-8 rounded-3xl shadow-sm border border-sage/30">
+                        <h3 class="text-2xl font-lora mb-6">Yêu cầu Đặt lịch</h3>
+                        <form class="space-y-4">
+                            <div>
+                                <label for="name" class="block text-sm font-medium text-main mb-1">Họ và tên</label>
+                                <input type="text" id="name" class="w-full bg-sage/20 border-none rounded-xl px-4 py-3 focus:ring-2 focus:ring-gold focus:outline-none transition-shadow" placeholder="Nguyễn Văn A">
+                            </div>
+                            <div class="grid grid-cols-2 gap-4">
+                                <div>
+                                    <label for="email" class="block text-sm font-medium text-main mb-1">Email</label>
+                                    <input type="email" id="email" class="w-full bg-sage/20 border-none rounded-xl px-4 py-3 focus:ring-2 focus:ring-gold focus:outline-none transition-shadow" placeholder="nguyenvana@example.com">
+                                </div>
+                                <div>
+                                    <label for="phone" class="block text-sm font-medium text-main mb-1">Số điện thoại</label>
+                                    <input type="tel" id="phone" class="w-full bg-sage/20 border-none rounded-xl px-4 py-3 focus:ring-2 focus:ring-gold focus:outline-none transition-shadow" placeholder="0901234567">
+                                </div>
+                            </div>
+                            <div>
+                                <label for="service" class="block text-sm font-medium text-main mb-1">Dịch vụ</label>
+                                <select id="service" class="w-full bg-sage/20 border-none rounded-xl px-4 py-3 focus:ring-2 focus:ring-gold focus:outline-none transition-shadow text-muted">
+                                    <option>Chọn một dịch vụ</option>
+                                    <option>Massage Đá Nóng Đặc Trưng</option>
+                                    <option>Chăm Sóc Da Mặt Toàn Diện</option>
+                                    <option>Ủ Trắng Bằng Thảo Dược</option>
+                                    <option>Khác / Chưa rõ</option>
+                                </select>
+                            </div>
+                            <button type="button" class="primary-button w-full py-4 text-lg mt-4 cursor-pointer">Xác nhận Đặt lịch</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-main text-cream py-12 border-t border-sage/20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-6">
+            <div class="flex items-center gap-2">
+                <i data-lucide="flower-2" class="text-gold w-6 h-6"></i>
+                <span class="font-lora text-xl font-medium tracking-wide">Hữu Hùng<span class="text-gold">.</span></span>
+            </div>
+            <div class="text-sm text-sage-dark text-center md:text-left">
+                &copy; 2026 Hữu Hùng Spa. Đã đăng ký bản quyền.
+            </div>
+            <div class="flex gap-4">
+                <a href="#" class="text-sage hover:text-gold transition-colors"><i data-lucide="instagram" class="w-5 h-5"></i></a>
+                <a href="#" class="text-sage hover:text-gold transition-colors"><i data-lucide="facebook" class="w-5 h-5"></i></a>
+                <a href="#" class="text-sage hover:text-gold transition-colors"><i data-lucide="twitter" class="w-5 h-5"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Initialize Icons & Scripts -->
+    <script>
+        // Initialize Lucide Icons
+        lucide.createIcons();
+
+        // Navbar Scroll Effect
+        const navbar = document.getElementById('navbar');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 20) {
+                navbar.classList.add('bg-cream/90', 'backdrop-blur-md', 'shadow-sm');
+                navbar.classList.remove('py-2');
+            } else {
+                navbar.classList.remove('bg-cream/90', 'backdrop-blur-md', 'shadow-sm');
+                navbar.classList.add('py-2');
+            }
+        });
+    </script>
+</body>
+</html>
